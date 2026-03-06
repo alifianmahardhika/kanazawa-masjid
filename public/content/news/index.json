@@ -1,0 +1,25 @@
+{
+  "items": [
+    {
+      "slug": "ramadhan-1447",
+      "title": "Ramadan 1447H Schedule Announcement",
+      "date": "2026-02-20",
+      "author": "Mosque Committee",
+      "excerpt": "The mosque committee is pleased to announce the schedule for Ramadan 1447H including tarawih prayers, iftar gatherings, and special programs throughout the holy month."
+    },
+    {
+      "slug": "kajian-ahad",
+      "title": "Sunday Islamic Study Circle",
+      "date": "2026-02-10",
+      "author": "Education Committee",
+      "excerpt": "Join us every Sunday morning for our weekly Islamic study circle. Open to all community members and students. Topics cover Quran, hadith, and daily Islamic practice."
+    },
+    {
+      "slug": "gotong-royong",
+      "title": "Community Mosque Cleaning Day",
+      "date": "2026-01-25",
+      "author": "Mosque Committee",
+      "excerpt": "We invite all community members to join the monthly mosque cleaning and maintenance day. Together we keep our place of worship clean and welcoming for everyone."
+    }
+  ]
+}
