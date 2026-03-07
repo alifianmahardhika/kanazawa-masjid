@@ -1,7 +1,7 @@
 ---
 title: Sunday Islamic Study Circle
 date: 2026-02-10
-author: Education Committee
+author: Mosque Committee
 ---
 
 Assalamu'alaikum warahmatullahi wabarakatuh,
@@ -10,13 +10,13 @@ We are happy to remind the community about our weekly **Sunday Islamic Study Cir
 
 ## About the Program
 
-The Sunday Study Circle is a weekly gathering aimed at deepening our understanding of Islam through structured learning in a warm, community environment. The sessions are conducted in a combination of English, Indonesian, and Japanese, making them accessible to our diverse community.
+The Sunday Study Circle is a weekly gathering aimed at deepening our understanding of Islam through structured learning in a warm, community environment.
 
 ## Schedule
 
 - **Day:** Every Sunday
-- **Time:** 10:00 – 11:30
-- **Location:** Mosque meeting room (2nd floor)
+- **Time:** 06:00-08:30
+- **Location:** Mosque (1st floor)
 
 ## Topics Covered
 
@@ -27,10 +27,6 @@ Our curriculum rotates through the following topics:
 3. **Fiqh (Islamic Jurisprudence)** – Practical rulings for daily life
 4. **Seerah** – The life and biography of Prophet Muhammad (peace be upon him)
 5. **Aqidah** – Core beliefs and creed in Islam
-
-## Current Series
-
-We are currently in the middle of a series on **Arba'in An-Nawawi** — the 40 Hadith of Imam An-Nawawi. Each week we discuss 2–3 hadith in depth, exploring their meaning, context, and practical applications.
 
 ## Who Can Attend?
 
@@ -45,8 +41,6 @@ No prior knowledge is required. Beginners are very welcome!
 
 Simply show up on Sunday morning. No registration needed. Light refreshments will be provided after the session.
 
-For questions, contact us at **info@kanazawamasjid.jp**.
-
 We look forward to learning together!
 
-*Education Committee*
+*Mosque Committee*

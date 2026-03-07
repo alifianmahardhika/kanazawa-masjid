@@ -1,7 +1,7 @@
 ---
 title: Ramadan Iftar Gathering 1447H
 date: 2026-03-15
-author: Ustadz Ilyas Maulana
+author: Mosque Committee
 image: /images/events/ramadan-iftar-1447.jpg
 ---
 
@@ -11,8 +11,8 @@ Alhamdulillah, as we enter the blessed month of Ramadan 1447H, the Kanazawa Umar
 
 ## Details
 
-- **Date:** Sunday, 15 March 2026
-- **Time:** 30 minutes before Maghrib (doors open at 5:30 PM)
+- **Date:** Saturday, 7 March 2026
+- **Time:** 30 minutes before Maghrib (doors open at 5:00 PM)
 - **Location:** Kanazawa Masjid, Kanazawa, Ishikawa Prefecture
 - **Admission:** Free — all are welcome
 
