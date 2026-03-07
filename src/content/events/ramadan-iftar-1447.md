@@ -11,6 +11,8 @@ Alhamdulillah, as we enter the blessed month of Ramadan 1447H, the Kanazawa Umar
 
 ## Details
 
+![Iftar Invitation](/images/events/20260307-iftar.jpeg)
+
 - **Date:** Saturday, 7 March 2026
 - **Time:** 30 minutes before Maghrib (doors open at 5:00 PM)
 - **Location:** Kanazawa Masjid, Kanazawa, Ishikawa Prefecture
@@ -18,10 +20,12 @@ Alhamdulillah, as we enter the blessed month of Ramadan 1447H, the Kanazawa Umar
 
 ## Programme
 
-1. Quran recitation and dua before iftar
+1. Iftar and Maghrib Jamaat
 2. Breaking fast together
-3. Maghrib prayer in congregation
+3. Cleaning
 4. Light dinner and community gathering
+5. Isya Jamaat 7:20 PM
+6. Taraweeh Jamaat (1 Juz, Para 8, 20 Rakaat)
 
 ## What to Bring
 
@@ -29,6 +33,6 @@ Please bring your own prayer mat if you have one. Food contributions are appreci
 
 ## Contact
 
-For more information or to volunteer, please reach out via our contact page or the WhatsApp prayer times group.
+For more information or to volunteer, please reach out via our contact page, the WhatsApp prayer times group, or Imam Maulana Ilyas [+62 823-2611-2991](https://wa.me/6282326112991).
 
 May Allah accept our fasting and worship. Ramadan Mubarak!

@@ -2,6 +2,8 @@ import { Link } from "react-router-dom";
 import PrayerTimes from "../components/PrayerTimes";
 import { useLang } from "../contexts/LanguageContext";
 import { loadContentList, formatDate } from "../utils/markdown";
+import { useSEO } from "../hooks/useSEO";
+import { CONTACT } from "../config/contact";
 
 const newsItems = loadContentList("news").slice(0, 3);
 const eventItems = loadContentList("events").slice(0, 3);
@@ -15,6 +17,10 @@ const SCHEDULE = [
 
 export default function Home() {
   const { t, lang } = useLang();
+  useSEO(
+    null,
+    "A place of worship and community for Muslims in Kanazawa, Ishikawa, Japan.",
+  );
 
   return (
     <div>
@@ -27,13 +33,13 @@ export default function Home() {
           <p className="text-primary-100 text-lg mb-8">{t("hero.subtitle")}</p>
           <div className="flex flex-col sm:flex-row gap-3 justify-center">
             <Link
-              to="/kontak"
+              to="/contact"
               className="bg-white text-primary-700 font-semibold px-6 py-3 rounded-lg hover:bg-primary-50 transition-colors"
             >
               {t("hero.learnMore")}
             </Link>
             <Link
-              to="/berita"
+              to="/news"
               className="border border-white text-white font-semibold px-6 py-3 rounded-lg hover:bg-primary-600 transition-colors"
             >
               {t("hero.viewNews")}
@@ -47,7 +53,7 @@ export default function Home() {
         <div className="flex items-center justify-between mb-6">
           <h2 className="section-title mb-0">{t("news.title")}</h2>
           <Link
-            to="/berita"
+            to="/news"
             className="text-primary-600 text-sm font-medium hover:underline"
           >
             {t("news.allNews")} &rarr;
@@ -70,7 +76,7 @@ export default function Home() {
                   {item.excerpt}
                 </p>
                 <Link
-                  to={`/berita/${item.slug}`}
+                  to={`/news/${item.slug}`}
                   className="btn-primary text-center text-sm self-start"
                 >
                   {t("news.readMore")}
@@ -87,7 +93,7 @@ export default function Home() {
           <div className="flex items-center justify-between mb-6">
             <h2 className="section-title mb-0">{t("events.title")}</h2>
             <Link
-              to="/acara"
+              to="/events"
               className="text-primary-600 text-sm font-medium hover:underline"
             >
               {t("events.allEvents")} &rarr;
@@ -130,7 +136,7 @@ export default function Home() {
                   {item.excerpt}
                 </p>
                 <Link
-                  to={`/acara/${item.slug}`}
+                  to={`/events/${item.slug}`}
                   className="btn-primary text-center text-sm self-start"
                 >
                   {t("events.readMore")}
@@ -177,12 +183,12 @@ export default function Home() {
                     {t("home.location")}
                   </p>
                   <a
-                    href="https://www.google.com/maps/dir/?api=1&destination=36.5549,136.6956"
+                    href={CONTACT.mapsDirectionsUrl}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="text-primary-600 text-sm hover:underline"
                   >
-                    Tsu-120 Wakamatsumachi, Kanazawa, Ishikawa 920-1165
+                    {CONTACT.address}
                   </a>
                 </div>
               </li>
@@ -205,10 +211,10 @@ export default function Home() {
                     {t("home.contactUs")}
                   </p>
                   <a
-                    href="tel:09070863480"
+                    href={CONTACT.phoneTel}
                     className="text-primary-600 text-sm hover:underline"
                   >
-                    090-7086-3480
+                    {CONTACT.phone}
                   </a>
                 </div>
               </li>
