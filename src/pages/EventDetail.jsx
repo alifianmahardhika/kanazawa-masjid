@@ -4,6 +4,7 @@ import { useLang } from "../contexts/LanguageContext";
 import { loadMarkdown, formatDate } from "../utils/markdown";
 import { useSEO, stripHtml } from "../hooks/useSEO";
 import MarkdownContent from "../components/MarkdownContent";
+import ShareButtons from "../components/ShareButtons";
 
 export default function EventDetail() {
   const { slug } = useParams();
@@ -75,6 +76,7 @@ export default function EventDetail() {
             )}
           </p>
           <MarkdownContent html={event.html} />
+          <ShareButtons title={event.frontmatter.title} />
         </article>
       )}
     </div>
