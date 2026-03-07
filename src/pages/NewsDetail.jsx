@@ -1,41 +1,54 @@
-import { useState, useEffect } from 'react'
-import { useParams, Link } from 'react-router-dom'
-import { useLang } from '../contexts/LanguageContext'
-import { loadMarkdown, formatDate } from '../utils/markdown'
+import { useState, useEffect } from "react";
+import { useParams, Link } from "react-router-dom";
+import { useLang } from "../contexts/LanguageContext";
+import { loadMarkdown, formatDate } from "../utils/markdown";
+import { useSEO, stripHtml } from "../hooks/useSEO";
+import MarkdownContent from "../components/MarkdownContent";
 
 export default function NewsDetail() {
-  const { slug } = useParams()
-  const { t, lang } = useLang()
-  const [article, setArticle] = useState(null)
-  const [error, setError] = useState(false)
+  const { slug } = useParams();
+  const { t, lang } = useLang();
+  const [article, setArticle] = useState(null);
+  const [error, setError] = useState(false);
+  useSEO(article?.frontmatter.title, article ? stripHtml(article.html) : null);
 
   useEffect(() => {
     try {
-      setArticle(loadMarkdown('news', slug))
-      setError(false)
+      setArticle(loadMarkdown("news", slug));
+      setError(false);
     } catch {
-      setError(true)
-      setArticle(null)
+      setError(true);
+      setArticle(null);
     }
-  }, [slug])
+  }, [slug]);
 
   return (
     <div className="max-w-3xl mx-auto px-4 py-12">
       <Link
-        to="/berita"
+        to="/news"
         className="inline-flex items-center gap-1 text-primary-600 text-sm font-medium hover:underline mb-8"
       >
-        <svg className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
+        <svg
+          className="h-4 w-4"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="currentColor"
+        >
+          <path
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            strokeWidth={2}
+            d="M15 19l-7-7 7-7"
+          />
         </svg>
-        {t('news.backToNews')}
+        {t("news.backToNews")}
       </Link>
 
       {error && (
         <div className="card text-center py-12">
-          <p className="text-gray-500">{t('news.notFound')}</p>
-          <Link to="/berita" className="btn-primary mt-4 inline-block">
-            {t('news.backToNews')}
+          <p className="text-gray-500">{t("news.notFound")}</p>
+          <Link to="/news" className="btn-primary mt-4 inline-block">
+            {t("news.backToNews")}
           </Link>
         </div>
       )}
@@ -48,15 +61,15 @@ export default function NewsDetail() {
           <p className="text-sm text-gray-400 mb-8">
             {formatDate(article.frontmatter.date, lang)}
             {article.frontmatter.author && (
-              <> &bull; {t('news.by')} {article.frontmatter.author}</>
+              <>
+                {" "}
+                &bull; {t("news.by")} {article.frontmatter.author}
+              </>
             )}
           </p>
-          <div
-            className="markdown-content"
-            dangerouslySetInnerHTML={{ __html: article.html }}
-          />
+          <MarkdownContent html={article.html} />
         </article>
       )}
     </div>
-  )
+  );
 }
