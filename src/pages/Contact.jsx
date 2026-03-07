@@ -1,11 +1,5 @@
 import { useLang } from '../contexts/LanguageContext'
 
-const SCHEDULE = [
-  { day: 'Friday', activity: "Jumu'ah Prayer", time: '12:30' },
-  { day: 'Sunday', activity: 'Islamic Study Circle', time: '10:00' },
-  { day: 'Daily', activity: 'Five Daily Prayers', time: 'See prayer times' },
-]
-
 export default function Contact() {
   const { t } = useLang()
 
@@ -45,21 +39,6 @@ export default function Contact() {
             </ul>
           </div>
 
-          {/* Schedule */}
-          <div className="card">
-            <h2 className="text-lg font-bold text-gray-900 mb-4">{t('contact.schedule')}</h2>
-            <ul className="space-y-3">
-              {SCHEDULE.map((item) => (
-                <li key={item.activity} className="text-sm">
-                  <div className="flex justify-between">
-                    <span className="font-medium text-gray-800">{item.activity}</span>
-                    <span className="text-primary-600 font-semibold">{item.time}</span>
-                  </div>
-                  <span className="text-gray-400">{item.day}</span>
-                </li>
-              ))}
-            </ul>
-          </div>
         </div>
 
         {/* Map */}
