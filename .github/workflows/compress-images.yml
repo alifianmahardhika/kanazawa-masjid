@@ -1,0 +1,17 @@
+name: Compress Images
+
+on:
+  push:
+    branches: [main, dev]
+    paths:
+      - 'public/images/**'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: calibreapp/image-actions@main
+        with:
+          githubToken: ${{ secrets.GITHUB_TOKEN }}
+          compressOnly: true
