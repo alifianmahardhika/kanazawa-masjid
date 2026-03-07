@@ -1,18 +1,12 @@
-import { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
 import PrayerTimes from '../components/PrayerTimes'
 import { useLang } from '../contexts/LanguageContext'
 import { loadContentList, formatDate } from '../utils/markdown'
 
+const newsItems = loadContentList('news').slice(0, 3)
+
 export default function Home() {
   const { t, lang } = useLang()
-  const [newsItems, setNewsItems] = useState([])
-
-  useEffect(() => {
-    loadContentList('news')
-      .then((items) => setNewsItems(items.slice(0, 3)))
-      .catch(() => setNewsItems([]))
-  }, [])
 
   return (
     <div>

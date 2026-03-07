@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react'
+import { useState, useEffect } from 'react'
 import { useParams, Link } from 'react-router-dom'
 import { useLang } from '../contexts/LanguageContext'
 import { loadMarkdown, formatDate } from '../utils/markdown'
@@ -7,16 +7,16 @@ export default function NewsDetail() {
   const { slug } = useParams()
   const { t, lang } = useLang()
   const [article, setArticle] = useState(null)
-  const [loading, setLoading] = useState(true)
   const [error, setError] = useState(false)
 
   useEffect(() => {
-    setLoading(true)
-    setError(false)
-    loadMarkdown(`/content/news/${slug}.md`)
-      .then(setArticle)
-      .catch(() => setError(true))
-      .finally(() => setLoading(false))
+    try {
+      setArticle(loadMarkdown('news', slug))
+      setError(false)
+    } catch {
+      setError(true)
+      setArticle(null)
+    }
   }, [slug])
 
   return (
@@ -30,8 +30,6 @@ export default function NewsDetail() {
         </svg>
         {t('news.backToNews')}
       </Link>
-
-      {loading && <p className="text-gray-500">{t('loading')}</p>}
 
       {error && (
         <div className="card text-center py-12">

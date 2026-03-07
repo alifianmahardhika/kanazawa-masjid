@@ -1,5 +1,9 @@
 import { marked } from 'marked'
 
+// All content is bundled at build time — no runtime fetches
+const markdownFiles = import.meta.glob('../content/**/*.md', { query: '?raw', import: 'default', eager: true })
+const indexFiles = import.meta.glob('../content/**/index.json', { eager: true })
+
 const EN_MONTHS = [
   'January', 'February', 'March', 'April', 'May', 'June',
   'July', 'August', 'September', 'October', 'November', 'December',
@@ -42,18 +46,18 @@ export function parseFrontmatter(raw) {
   return { frontmatter, content: match[2].trim() }
 }
 
-export async function loadMarkdown(path) {
-  const res = await fetch(path)
-  if (!res.ok) throw new Error(`Failed to load: ${path}`)
-  const raw = await res.text()
-  const { frontmatter, content } = parseFrontmatter(raw)
-  const html = marked(content)
-  return { frontmatter, content, html }
+export function loadContentList(type) {
+  const key = `../content/${type}/index.json`
+  const mod = indexFiles[key]
+  if (!mod) return []
+  return mod.default.items
 }
 
-export async function loadContentList(type) {
-  const res = await fetch(`/content/${type}/index.json`)
-  if (!res.ok) throw new Error(`Failed to load content list: ${type}`)
-  const data = await res.json()
-  return data.items
+export function loadMarkdown(type, slug) {
+  const key = `../content/${type}/${slug}.md`
+  const raw = markdownFiles[key]
+  if (!raw) throw new Error(`Content not found: ${type}/${slug}`)
+  const { frontmatter, content } = parseFrontmatter(raw)
+  const html = marked.parse(content)
+  return { frontmatter, content, html }
 }

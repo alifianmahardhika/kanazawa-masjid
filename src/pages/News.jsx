@@ -1,27 +1,17 @@
-import { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
 import { useLang } from '../contexts/LanguageContext'
 import { loadContentList, formatDate } from '../utils/markdown'
 
+const items = loadContentList('news')
+
 export default function News() {
   const { t, lang } = useLang()
-  const [items, setItems] = useState([])
-  const [loading, setLoading] = useState(true)
-
-  useEffect(() => {
-    loadContentList('news')
-      .then(setItems)
-      .catch(() => setItems([]))
-      .finally(() => setLoading(false))
-  }, [])
 
   return (
     <div className="max-w-6xl mx-auto px-4 py-12">
       <h1 className="section-title">{t('news.allNews')}</h1>
 
-      {loading && <p className="text-gray-500">{t('loading')}</p>}
-
-      {!loading && items.length === 0 && (
+      {items.length === 0 && (
         <p className="text-gray-500">{t('news.noNews')}</p>
       )}
 
