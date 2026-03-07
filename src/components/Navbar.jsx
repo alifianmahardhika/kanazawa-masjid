@@ -9,6 +9,7 @@ export default function Navbar() {
   const navLinks = [
     { to: '/', label: t('nav.home') },
     { to: '/berita', label: t('nav.news') },
+    { to: '/acara', label: t('nav.events') },
     { to: '/kontak', label: t('nav.contact') },
   ]
 

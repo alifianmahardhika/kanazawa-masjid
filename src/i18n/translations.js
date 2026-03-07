@@ -3,6 +3,7 @@ export const translations = {
     nav: {
       home: 'Home',
       news: 'News',
+      events: 'Events',
       contact: 'Contact',
     },
     hero: {
@@ -23,6 +24,13 @@ export const translations = {
         Maghrib: 'Maghrib',
         Isha: 'Isha',
       },
+      whatsapp: 'Join Prayer Times WhatsApp Group',
+      captchaTitle: 'Human Verification',
+      captchaPrompt: 'Solve this to continue:',
+      captchaPlaceholder: 'Your answer',
+      captchaSubmit: 'Continue to WhatsApp',
+      captchaError: 'Wrong answer. Please try again.',
+      captchaCancel: 'Cancel',
     },
     news: {
       title: 'Latest News',
@@ -32,6 +40,15 @@ export const translations = {
       by: 'By',
       noNews: 'No news available.',
       notFound: 'Article not found.',
+    },
+    events: {
+      title: 'Upcoming Events',
+      allEvents: 'All Events',
+      readMore: 'Learn More',
+      noEvents: 'No upcoming events.',
+      notFound: 'Event not found.',
+      backToEvents: '← Back to Events',
+      by: 'By',
     },
     contact: {
       title: 'Contact Us',
@@ -61,6 +78,7 @@ export const translations = {
     nav: {
       home: 'Beranda',
       news: 'Berita',
+      events: 'Acara',
       contact: 'Kontak',
     },
     hero: {
@@ -81,6 +99,13 @@ export const translations = {
         Maghrib: 'Maghrib',
         Isha: 'Isya',
       },
+      whatsapp: 'Gabung Grup WhatsApp Jadwal Sholat',
+      captchaTitle: 'Verifikasi Manusia',
+      captchaPrompt: 'Jawab soal ini untuk melanjutkan:',
+      captchaPlaceholder: 'Jawabanmu',
+      captchaSubmit: 'Lanjut ke WhatsApp',
+      captchaError: 'Jawaban salah. Coba lagi.',
+      captchaCancel: 'Batal',
     },
     news: {
       title: 'Berita Terbaru',
@@ -90,6 +115,15 @@ export const translations = {
       by: 'Oleh',
       noNews: 'Belum ada berita.',
       notFound: 'Artikel tidak ditemukan.',
+    },
+    events: {
+      title: 'Acara Mendatang',
+      allEvents: 'Semua Acara',
+      readMore: 'Selengkapnya',
+      noEvents: 'Tidak ada acara mendatang.',
+      notFound: 'Acara tidak ditemukan.',
+      backToEvents: '← Kembali ke Acara',
+      by: 'Oleh',
     },
     contact: {
       title: 'Hubungi Kami',
