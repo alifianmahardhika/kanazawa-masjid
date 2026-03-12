@@ -25,6 +25,10 @@ bun run preview    # Preview production build
 
 **Styling** uses Tailwind with a custom `primary` green palette (defined in `tailwind.config.js`). Shared utility classes `.card`, `.btn-primary`, `.section-title`, and `.markdown-content` (with full heading/list/blockquote styles) are defined as `@layer components` in `src/index.css`.
 
+**Shared config** — mosque contact details, coordinates, and WhatsApp links are centralised in `src/config/contact.js` (`CONTACT`). Import from there rather than hardcoding values.
+
+**SEO** — `src/hooks/useSEO.js` exports `useSEO(title, description)` (sets `document.title` and meta description) and `stripHtml(html)` (produces a plain-text excerpt ≤160 chars). Call `useSEO` at the top of every page component.
+
 ## Git Workflow
 
 - Active development branch is `dev` — always commit and push to `dev`

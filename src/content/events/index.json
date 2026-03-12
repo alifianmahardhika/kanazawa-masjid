@@ -1,9 +1,17 @@
 {
   "items": [
     {
+      "slug": "1447-itikaf",
+      "title": "I'tikaf Night Ramadan 1447H",
+      "date": "2026-03-12",
+      "author": "Mosque Committee",
+      "excerpt": "Join us for I'tikaf — an overnight spiritual retreat at the masjid during the final nights of Ramadan 1447H. Open to all brothers.",
+      "image": "/images/events/1447-itikaf.jpeg"
+    },
+    {
       "slug": "ramadan-iftar-1447",
       "title": "Ramadan Iftar Gathering 1447H",
-      "date": "2026-03-15",
+      "date": "2026-03-06",
       "author": "Mosque Committee",
       "excerpt": "Join us for a community iftar dinner during the blessed month of Ramadan. All Muslims and their families are warmly welcome to break fast together at the masjid.",
       "image": "/images/events/ramadan-iftar-1447.jpg"

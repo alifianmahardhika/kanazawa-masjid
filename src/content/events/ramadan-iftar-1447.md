@@ -1,6 +1,6 @@
 ---
 title: Ramadan Iftar Gathering 1447H
-date: 2026-03-15
+date: 2026-03-06
 author: Mosque Committee
 image: /images/events/ramadan-iftar-1447.jpg
 ---
