@@ -24,6 +24,7 @@ export default function Navbar() {
     { to: "/news", label: t("nav.news") },
     { to: "/events", label: t("nav.events") },
     { to: "/contact", label: t("nav.contact") },
+    { to: "/donate", label: t("nav.donate") },
   ];
 
   const linkClass = ({ isActive }) =>

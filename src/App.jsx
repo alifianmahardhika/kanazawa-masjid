@@ -8,6 +8,7 @@ import Events from "./pages/Events";
 import EventDetail from "./pages/EventDetail";
 import Contact from "./pages/Contact";
 import Registration from "./pages/Registration";
+import Donation from "./pages/Donation";
 
 const router = createBrowserRouter([
   {
@@ -21,6 +22,7 @@ const router = createBrowserRouter([
       { path: "events/:slug", element: <EventDetail /> },
       { path: "contact", element: <Contact /> },
       { path: "register/:eventId", element: <Registration /> },
+      { path: "donate", element: <Donation /> },
     ],
   },
 ]);

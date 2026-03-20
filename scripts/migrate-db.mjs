@@ -66,13 +66,22 @@ const MIGRATIONS = [
       )
     `,
   },
+  {
+    version: "003_create_donations",
+    sql: `
+      CREATE TABLE IF NOT EXISTS donations (
+        id              INTEGER PRIMARY KEY AUTOINCREMENT,
+        name            TEXT    NOT NULL,
+        name_normalized TEXT    NOT NULL,
+        amount          INTEGER NOT NULL,
+        transfer_date   TEXT    NOT NULL,
+        message         TEXT    NOT NULL DEFAULT '',
+        month_key       TEXT    NOT NULL,
+        created_at      TEXT    NOT NULL
+      )
+    `,
+  },
   // Add future migrations here — never edit or remove existing ones.
-  //
-  // Example:
-  // {
-  //   version: "003_add_phone_to_registrations",
-  //   sql: "ALTER TABLE registrations ADD COLUMN phone TEXT NOT NULL DEFAULT ''",
-  // },
 ];
 
 async function migrate() {
