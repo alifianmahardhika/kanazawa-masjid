@@ -4,6 +4,8 @@ import { useLang } from "../contexts/LanguageContext";
 import { loadContentList, formatDate } from "../utils/markdown";
 import { useSEO } from "../hooks/useSEO";
 import { CONTACT } from "../config/contact";
+import announcementConfig from "../config/announcement.json";
+import * as Announcements from "../components/announcements";
 
 
 const RULE_ICONS = [
@@ -27,6 +29,15 @@ const SCHEDULE = [
   { day: "Daily", activity: "Five Daily Prayers", time: "See prayer times" },
   { day: "Daily (Ramadan)", activity: "Taraweeh", time: "19:30" },
 ];
+
+function ActiveAnnouncement() {
+  const { active, expires, component } = announcementConfig;
+  if (!active) return null;
+  if (expires && new Date() > new Date(expires)) return null;
+  const Banner = Announcements[component];
+  if (!Banner) return null;
+  return <Banner />;
+}
 
 export default function Home() {
   const { t, lang } = useLang();
@@ -63,28 +74,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Eid Registration Banner */}
-      <section className="bg-gradient-to-r from-amber-500 to-orange-500 text-white">
-        <div className="max-w-4xl mx-auto px-4 py-8 flex flex-col sm:flex-row items-center gap-6">
-          <div className="text-4xl select-none">🌙</div>
-          <div className="flex-1 text-center sm:text-left">
-            <p className="text-sm font-semibold uppercase tracking-widest text-amber-100 mb-1">
-              {t("eidBanner.label")}
-            </p>
-            <h2 className="text-xl md:text-2xl font-bold mb-1">{t("eidBanner.title")}</h2>
-            <p className="text-amber-100 text-sm">{t("eidBanner.desc")}</p>
-          </div>
-          <Link
-            to="/register/eid-adha-1447"
-            className="shrink-0 bg-white text-orange-600 font-bold px-7 py-3 rounded-xl shadow-md hover:bg-amber-50 hover:shadow-lg hover:-translate-y-0.5 active:translate-y-0 transition-all duration-150 flex items-center gap-2 text-base"
-          >
-            {t("eidBanner.cta")}
-            <svg className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
-              <path strokeLinecap="round" strokeLinejoin="round" d="M13 7l5 5m0 0l-5 5m5-5H6" />
-            </svg>
-          </Link>
-        </div>
-      </section>
+      <ActiveAnnouncement />
 
       {/* Mosque Rules */}
       <section id="mosque-rules" className="max-w-6xl mx-auto px-4 py-12">
