@@ -1,6 +1,14 @@
 {
   "items": [
     {
+      "slug": "islamic-geometric-arts-2026",
+      "title": "Art Workshop on Islamic Geometric Arts",
+      "date": "2026-06-27",
+      "author": "Panitia Masjid",
+      "excerpt": "Join us for a creative and relaxing workshop where you'll discover the beauty of Islamic geometric art. For families — everyone welcome, no experience needed!",
+      "image": "/images/events/islamic-geometric-arts-2026.jpg"
+    },
+    {
       "slug": "jenazah-practice-2026",
       "title": "Praktik Pengurusan Jenazah",
       "date": "2026-06-13",

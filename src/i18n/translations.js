@@ -52,6 +52,7 @@ export const translations = {
       notFound: "Event not found.",
       backToEvents: "← Back to Events",
       by: "By",
+      langNotice: "This event is available in English or Japanese.",
     },
     contact: {
       title: "Contact Us",
@@ -204,6 +205,7 @@ export const translations = {
       notFound: "Acara tidak ditemukan.",
       backToEvents: "← Kembali ke Acara",
       by: "Oleh",
+      langNotice: "Acara ini tersedia dalam bahasa Inggris atau Jepang.",
     },
     contact: {
       title: "Hubungi Kami",
@@ -356,6 +358,7 @@ export const translations = {
       notFound: "イベントが見つかりません。",
       backToEvents: "← イベントに戻る",
       by: "主催：",
+      langNotice: "このイベントは英語または日本語でご覧いただけます。",
     },
     contact: {
       title: "お問い合わせ",
