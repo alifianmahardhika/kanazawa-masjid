@@ -23,6 +23,7 @@ export default function Wakaf() {
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(false);
   const [dashboard, setDashboard] = useState(null);
+  const [posterVisible, setPosterVisible] = useState(true);
   const [statuses, setStatuses] = useState([]);
 
   useEffect(() => {
@@ -66,6 +67,69 @@ export default function Wakaf() {
       </section>
 
       <div className="max-w-4xl mx-auto px-4 py-10 space-y-8">
+        {/* Poster */}
+        <div className="mb-8">
+          <div className="flex items-center gap-3 mb-3">
+            <button
+              onClick={() => setPosterVisible((v) => !v)}
+              className="inline-flex items-center gap-1.5 text-sm font-medium text-gray-600 hover:text-gray-900 transition-colors"
+            >
+              <svg
+                className={`h-4 w-4 transition-transform duration-200 ${posterVisible ? "" : "-rotate-90"}`}
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+                strokeWidth={2}
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  d="M19 9l-7 7-7-7"
+                />
+              </svg>
+              {posterVisible ? t("wakaf.posterHide") : t("wakaf.posterShow")}
+            </button>
+
+            <a
+              href="/images/wakaf/kanazawa-mosque-extension-poster.jpeg"
+              download="kanazawa-mosque-extension-poster.jpeg"
+              className="inline-flex items-center gap-1.5 text-sm font-medium text-primary-600 hover:text-primary-800 transition-colors"
+            >
+              <svg
+                className="h-4 w-4"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+                strokeWidth={2}
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"
+                />
+              </svg>
+              {t("wakaf.posterDownload")}
+            </a>
+          </div>
+
+          {posterVisible && (
+            <div className="rounded-xl overflow-hidden shadow-md max-w-lg">
+              <a
+                href="/images/wakaf/kanazawa-mosque-extension-poster.jpeg"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img
+                  src="/images/wakaf/kanazawa-mosque-extension-poster.jpeg"
+                  alt={t("wakaf.posterAlt")}
+                  className="w-full block hover:opacity-95 transition-opacity"
+                  loading="eager"
+                />
+              </a>
+            </div>
+          )}
+        </div>
+
         {/* About this project */}
         <div className="card">
           <h2 className="text-xl font-bold text-gray-900 mb-3">
@@ -120,7 +184,7 @@ export default function Wakaf() {
             <div className="text-white/80 space-y-1">
               <p>
                 <span className="text-white/60">Branch</span>{" "}
-                <span className="font-mono">三八八 (318)</span>
+                <span className="font-mono">三一八 (318)</span>
                 <span className="mx-2 text-white/40">|</span>
                 <span className="text-white/60">Branch code</span>{" "}
                 <span className="font-mono">13160-2</span>
@@ -130,12 +194,12 @@ export default function Wakaf() {
                 <span className="font-mono">Ordinary (普通)</span>
                 <span className="mx-2 text-white/40">|</span>
                 <span className="text-white/60">Account no</span>{" "}
-                <span className="font-mono">0835916</span>
+                <span className="font-mono">08359161</span>
               </p>
               <p>
                 <span className="text-white/60">Account name</span>{" "}
                 <span className="font-mono">
-                  カナザワ マスジッド フランド ライ ダイ アスク
+                  カナザワ マスジッド ブランチ オブ トヤマ モスク
                 </span>
               </p>
             </div>

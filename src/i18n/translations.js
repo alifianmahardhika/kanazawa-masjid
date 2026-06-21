@@ -27,7 +27,8 @@ export const translations = {
         Isha: "Isha",
       },
       whatsapp: "Join Prayer Times WhatsApp Group",
-      disclaimer: "⚠️ The times above are approximate. Exact jamaat times are confirmed daily by Imam in the WhatsApp group.",
+      disclaimer:
+        "⚠️ The times above are approximate. Exact jamaat times are confirmed daily by Imam in the WhatsApp group.",
       captchaTitle: "Human Verification",
       captchaPrompt: "Solve this to continue:",
       captchaPlaceholder: "Your answer",
@@ -63,7 +64,8 @@ export const translations = {
       schedule: "Regular Activities",
       mapTitle: "Our Location",
       socialMedia: "Social Media",
-      followUs: "Follow us for the latest news and updates from the mosque community.",
+      followUs:
+        "Follow us for the latest news and updates from the mosque community.",
     },
     home: {
       quickInfo: "Quick Information",
@@ -108,12 +110,20 @@ export const translations = {
     },
     wakaf: {
       pageTitle: "Kanazawa Mosque Extension Project",
-      pageDesc: "Support the Kanazawa Mosque Extension Project — Stage 1: Land Acquisition in Ishikawa, Japan.",
+      pageDesc:
+        "Support the Kanazawa Mosque Extension Project — Stage 1: Land Acquisition in Ishikawa, Japan.",
       subtitle: "Stage 1: Land Acquisition — Ishikawa, Japan",
+      posterAlt: "Kanazawa Mosque Extension Project Poster",
+      posterHide: "Hide Poster",
+      posterShow: "Show Poster",
+      posterDownload: "Download Poster",
       aboutTitle: "About this project",
-      about1: "Masjid Umar bin Al-Khattab Kanazawa is the <strong>only mosque in Ishikawa Prefecture</strong>, serving the growing Muslim community in the region. To accommodate more worshippers and expand our facilities, we are acquiring a plot of land located just <strong>120 metres</strong> from the mosque — only a 3-minute walk away.",
-      about2: "The land (approx. 297.59 m²) will be used for <strong>parking and future mosque expansion</strong>. This is your opportunity to be part of something that will benefit the ummah for generations to come, insyaAllah.",
-      hadithText: '“When a person dies, his deeds come to an end except three: Sadaqah Jariyah, beneficial knowledge, or a righteous child who prays for him.”',
+      about1:
+        "Masjid Umar bin Al-Khattab Kanazawa is the <strong>only mosque in Ishikawa Prefecture</strong>, serving the growing Muslim community in the region. To accommodate more worshippers and expand our facilities, we are acquiring a plot of land located just <strong>120 metres</strong> from the mosque — only a 3-minute walk away.",
+      about2:
+        "The land (approx. 297.59 m²) will be used for <strong>parking and future mosque expansion</strong>. This is your opportunity to be part of something that will benefit the ummah for generations to come, insyaAllah.",
+      hadithText:
+        "“When a person dies, his deeds come to an end except three: Sadaqah Jariyah, beneficial knowledge, or a righteous child who prays for him.”",
       hadithSource: "(Sahih Muslim)",
       infoPortions: "Total Portions",
       infoSize: "Per Portion",
@@ -133,22 +143,42 @@ export const translations = {
       dataNote: "Data is updated periodically.",
       howToDonate: "How to Donate",
       step2: "Contact via WhatsApp",
-      ctaText: "After transferring, please contact {contact} on WhatsApp to confirm your donation and reserve your portions.",
+      ctaText:
+        "After transferring, please contact {contact} on WhatsApp to confirm your donation and reserve your portions.",
     },
     loading: "Loading...",
     error: "Something went wrong.",
     mosqueRules: {
       pageTitle: "Mosque General Rules",
-      intro: "Please help us keep the mosque clean, peaceful, and respectful for everyone.",
+      intro:
+        "Please help us keep the mosque clean, peaceful, and respectful for everyone.",
       closing: "Your kindness makes our mosque a better place for all.",
       jazakum: "Jazakum Allahu Khairan.",
       rules: [
-        { title: "Keep It Clean", desc: "Please keep the mosque clean and tidy." },
-        { title: "Park Considerately", desc: "Please park your car or bicycle without blocking others." },
-        { title: "Children Are Precious", desc: "Please supervise children at all times." },
-        { title: "Maintain Silence", desc: "Please keep your voice low and turn off mobile phones." },
-        { title: "Respect the Masjid", desc: "Please handle the Qur'an, books, and other items with care. Do not take anything without permission." },
-        { title: "Keep It Dry", desc: "Please keep the wudu area and toilet clean and dry." },
+        {
+          title: "Keep It Clean",
+          desc: "Please keep the mosque clean and tidy.",
+        },
+        {
+          title: "Park Considerately",
+          desc: "Please park your car or bicycle without blocking others.",
+        },
+        {
+          title: "Children Are Precious",
+          desc: "Please supervise children at all times.",
+        },
+        {
+          title: "Maintain Silence",
+          desc: "Please keep your voice low and turn off mobile phones.",
+        },
+        {
+          title: "Respect the Masjid",
+          desc: "Please handle the Qur'an, books, and other items with care. Do not take anything without permission.",
+        },
+        {
+          title: "Keep It Dry",
+          desc: "Please keep the wudu area and toilet clean and dry.",
+        },
       ],
     },
   },
@@ -180,7 +210,8 @@ export const translations = {
         Isha: "Isya",
       },
       whatsapp: "Gabung Grup WhatsApp Jadwal Sholat",
-      disclaimer: "⚠️ Waktu di atas bersifat perkiraan. Waktu jamaat yang tepat dikonfirmasi setiap hari oleh Imam di grup WhatsApp.",
+      disclaimer:
+        "⚠️ Waktu di atas bersifat perkiraan. Waktu jamaat yang tepat dikonfirmasi setiap hari oleh Imam di grup WhatsApp.",
       captchaTitle: "Verifikasi Manusia",
       captchaPrompt: "Jawab soal ini untuk melanjutkan:",
       captchaPlaceholder: "Jawabanmu",
@@ -216,7 +247,8 @@ export const translations = {
       schedule: "Kegiatan Rutin",
       mapTitle: "Lokasi Kami",
       socialMedia: "Media Sosial",
-      followUs: "Ikuti kami untuk berita dan pembaruan terkini dari komunitas masjid.",
+      followUs:
+        "Ikuti kami untuk berita dan pembaruan terkini dari komunitas masjid.",
     },
     home: {
       quickInfo: "Informasi Singkat",
@@ -261,12 +293,20 @@ export const translations = {
     },
     wakaf: {
       pageTitle: "Proyek Perluasan Masjid Kanazawa",
-      pageDesc: "Dukung Proyek Perluasan Masjid Kanazawa — Tahap 1: Pengadaan Lahan di Ishikawa, Jepang.",
+      pageDesc:
+        "Dukung Proyek Perluasan Masjid Kanazawa — Tahap 1: Pengadaan Lahan di Ishikawa, Jepang.",
       subtitle: "Tahap 1: Pengadaan Lahan — Ishikawa, Jepang",
+      posterAlt: "Poster Proyek Perluasan Masjid Kanazawa",
+      posterHide: "Sembunyikan Poster",
+      posterShow: "Tampilkan Poster",
+      posterDownload: "Unduh Poster",
       aboutTitle: "Tentang proyek ini",
-      about1: "Masjid Umar bin Al-Khattab Kanazawa adalah <strong>satu-satunya masjid di Prefektur Ishikawa</strong>, melayani komunitas Muslim yang terus berkembang di wilayah ini. Untuk menampung lebih banyak jemaah dan memperluas fasilitas, kami sedang mengakuisisi sebidang lahan yang berlokasi hanya <strong>120 meter</strong> dari masjid — hanya 3 menit berjalan kaki.",
-      about2: "Lahan tersebut (sekitar 297,59 m²) akan digunakan untuk <strong>parkir dan perluasan masjid di masa depan</strong>. Ini adalah kesempatan Anda untuk menjadi bagian dari sesuatu yang akan memberi manfaat bagi umat selama generasi mendatang, insyaAllah.",
-      hadithText: '"Apabila seorang manusia meninggal dunia, maka terputuslah amalnya kecuali tiga perkara: Shadaqah Jariyah, ilmu yang bermanfaat, atau anak shaleh yang mendoakannya."',
+      about1:
+        "Masjid Umar bin Al-Khattab Kanazawa adalah <strong>satu-satunya masjid di Prefektur Ishikawa</strong>, melayani komunitas Muslim yang terus berkembang di wilayah ini. Untuk menampung lebih banyak jemaah dan memperluas fasilitas, kami sedang mengakuisisi sebidang lahan yang berlokasi hanya <strong>120 meter</strong> dari masjid — hanya 3 menit berjalan kaki.",
+      about2:
+        "Lahan tersebut (sekitar 297,59 m²) akan digunakan untuk <strong>parkir dan perluasan masjid di masa depan</strong>. Ini adalah kesempatan Anda untuk menjadi bagian dari sesuatu yang akan memberi manfaat bagi umat selama generasi mendatang, insyaAllah.",
+      hadithText:
+        '"Apabila seorang manusia meninggal dunia, maka terputuslah amalnya kecuali tiga perkara: Shadaqah Jariyah, ilmu yang bermanfaat, atau anak shaleh yang mendoakannya."',
       hadithSource: "(Sahih Muslim)",
       infoPortions: "Total Porsi",
       infoSize: "Per Porsi",
@@ -286,22 +326,43 @@ export const translations = {
       dataNote: "Data diperbarui secara berkala.",
       howToDonate: "Cara Berdonasi",
       step2: "Hubungi via WhatsApp",
-      ctaText: "Setelah transfer, hubungi {contact} via WhatsApp untuk konfirmasi donasi dan pemesanan porsi Anda.",
+      ctaText:
+        "Setelah transfer, hubungi {contact} via WhatsApp untuk konfirmasi donasi dan pemesanan porsi Anda.",
     },
     loading: "Memuat...",
     error: "Terjadi kesalahan.",
     mosqueRules: {
       pageTitle: "Peraturan Umum Masjid",
-      intro: "Mohon bantu kami menjaga kebersihan, ketenangan, dan kehormatan masjid untuk semua orang.",
-      closing: "Kebaikan Anda menjadikan masjid ini tempat yang lebih baik untuk semua.",
+      intro:
+        "Mohon bantu kami menjaga kebersihan, ketenangan, dan kehormatan masjid untuk semua orang.",
+      closing:
+        "Kebaikan Anda menjadikan masjid ini tempat yang lebih baik untuk semua.",
       jazakum: "Jazakum Allahu Khairan.",
       rules: [
-        { title: "Jaga Kebersihan", desc: "Mohon jaga kebersihan dan kerapian masjid." },
-        { title: "Parkir dengan Tertib", desc: "Mohon parkir kendaraan atau sepeda tanpa menghalangi orang lain." },
-        { title: "Anak-Anak Adalah Amanah", desc: "Mohon awasi anak-anak setiap saat." },
-        { title: "Jaga Ketenangan", desc: "Mohon rendahkan suara dan matikan ponsel." },
-        { title: "Hormati Masjid", desc: "Mohon perlakukan Al-Qur'an, buku, dan barang lainnya dengan hati-hati. Jangan mengambil apapun tanpa izin." },
-        { title: "Jaga Tetap Kering", desc: "Mohon jaga area wudhu dan toilet tetap bersih dan kering setelah digunakan." },
+        {
+          title: "Jaga Kebersihan",
+          desc: "Mohon jaga kebersihan dan kerapian masjid.",
+        },
+        {
+          title: "Parkir dengan Tertib",
+          desc: "Mohon parkir kendaraan atau sepeda tanpa menghalangi orang lain.",
+        },
+        {
+          title: "Anak-Anak Adalah Amanah",
+          desc: "Mohon awasi anak-anak setiap saat.",
+        },
+        {
+          title: "Jaga Ketenangan",
+          desc: "Mohon rendahkan suara dan matikan ponsel.",
+        },
+        {
+          title: "Hormati Masjid",
+          desc: "Mohon perlakukan Al-Qur'an, buku, dan barang lainnya dengan hati-hati. Jangan mengambil apapun tanpa izin.",
+        },
+        {
+          title: "Jaga Tetap Kering",
+          desc: "Mohon jaga area wudhu dan toilet tetap bersih dan kering setelah digunakan.",
+        },
       ],
     },
   },
@@ -333,7 +394,8 @@ export const translations = {
         Isha: "イシャー",
       },
       whatsapp: "礼拝時間WhatsAppグループに参加",
-      disclaimer: "⚠️ 上記の時間は目安です。正確なジャマート時間は毎日イマームがWhatsAppグループで確認します。",
+      disclaimer:
+        "⚠️ 上記の時間は目安です。正確なジャマート時間は毎日イマームがWhatsAppグループで確認します。",
       captchaTitle: "人間確認",
       captchaPrompt: "続けるにはこれを解いてください：",
       captchaPlaceholder: "回答を入力",
@@ -369,7 +431,8 @@ export const translations = {
       schedule: "定期活動",
       mapTitle: "場所",
       socialMedia: "ソーシャルメディア",
-      followUs: "モスクコミュニティの最新ニュースと更新情報をフォローしてください。",
+      followUs:
+        "モスクコミュニティの最新ニュースと更新情報をフォローしてください。",
     },
     home: {
       quickInfo: "基本情報",
@@ -414,12 +477,20 @@ export const translations = {
     },
     wakaf: {
       pageTitle: "金沢モスク拡張プロジェクト",
-      pageDesc: "金沢モスク拡張プロジェクト（第1段階：石川県での土地取得）をご支援ください。",
+      pageDesc:
+        "金沢モスク拡張プロジェクト（第1段階：石川県での土地取得）をご支援ください。",
       subtitle: "第1段階：土地取得 — 石川県、日本",
+      posterAlt: "金沢モスク拡張プロジェクトのポスター",
+      posterHide: "ポスターを隠す",
+      posterShow: "ポスターを表示",
+      posterDownload: "ポスターをダウンロード",
       aboutTitle: "プロジェクトについて",
-      about1: "金沢ウマル・ビン・アル・カッタブ・モスクは<strong>石川県唯一のモスク</strong>であり、地域の成長するムスリムコミュニティに奉仕しています。より多くの礼拝者を収容し施設を拡充するため、モスクから<strong>わずか120メートル</strong>（徒歩3分）の土地を取得します。",
-      about2: "この土地（約297.59㎡）は<strong>駐車場および将来のモスク拡張</strong>に使用されます。これはウンマのために何世代にもわたって恩恵をもたらすものへの参加機会です、インシャーアッラー。",
-      hadithText: "「人が亡くなると、その行いは途絶えるが、三つのことは除かれる：サダカ・ジャーリヤ（継続的な慈善）、有益な知識、または彼のために祈る敬虔な子。」",
+      about1:
+        "金沢ウマル・ビン・アル・カッタブ・モスクは<strong>石川県唯一のモスク</strong>であり、地域の成長するムスリムコミュニティに奉仕しています。より多くの礼拝者を収容し施設を拡充するため、モスクから<strong>わずか120メートル</strong>（徒歩3分）の土地を取得します。",
+      about2:
+        "この土地（約297.59㎡）は<strong>駐車場および将来のモスク拡張</strong>に使用されます。これはウンマのために何世代にもわたって恩恵をもたらすものへの参加機会です、インシャーアッラー。",
+      hadithText:
+        "「人が亡くなると、その行いは途絶えるが、三つのことは除かれる：サダカ・ジャーリヤ（継続的な慈善）、有益な知識、または彼のために祈る敬虔な子。」",
       hadithSource: "（サヒーフ・ムスリム）",
       infoPortions: "総ポーション数",
       infoSize: "1ポーションあたり",
@@ -430,7 +501,8 @@ export const translations = {
       portionsTaken: "支払済",
       portionsReserved: "予約済",
       portionsAvailable: "利用可能",
-      portionMapDesc: "ポーションにカーソルを合わせてステータスを確認してください。",
+      portionMapDesc:
+        "ポーションにカーソルを合わせてステータスを確認してください。",
       paid: "支払済",
       reserved: "予約済",
       available: "利用可能",
@@ -439,22 +511,42 @@ export const translations = {
       dataNote: "データは定期的に更新されます。",
       howToDonate: "寄付の方法",
       step2: "WhatsAppで連絡する",
-      ctaText: "振込後、{contact}にWhatsAppでご連絡いただき、寄付と区画の予約をご確認ください。",
+      ctaText:
+        "振込後、{contact}にWhatsAppでご連絡いただき、寄付と区画の予約をご確認ください。",
     },
     loading: "読み込み中...",
     error: "エラーが発生しました。",
     mosqueRules: {
       pageTitle: "モスク一般規則",
-      intro: "モスクを清潔で平和的、そして皆にとって敬意ある場所に保つためご協力をお願いします。",
+      intro:
+        "モスクを清潔で平和的、そして皆にとって敬意ある場所に保つためご協力をお願いします。",
       closing: "皆様のご配慮がモスクをより良い場所にします。",
       jazakum: "ジャザクム アッラーフ ハイラン。",
       rules: [
-        { title: "清潔に保つ", desc: "モスクを常に清潔で整頓された状態に保ってください。" },
-        { title: "思いやりのある駐車", desc: "他の方の邪魔にならないよう、車や自転車を駐車してください。" },
-        { title: "子どもたちは大切な存在", desc: "常にお子様から目を離さないようにしてください。" },
-        { title: "静粛を保つ", desc: "声を低くし、携帯電話の電源をお切りください。" },
-        { title: "マスジドを敬う", desc: "クルアーン、書籍、その他の物品は丁寧に扱ってください。許可なく持ち出さないようにしてください。" },
-        { title: "乾燥した状態を保つ", desc: "使用後はウドゥーエリアとトイレを清潔で乾いた状態に保ってください。" },
+        {
+          title: "清潔に保つ",
+          desc: "モスクを常に清潔で整頓された状態に保ってください。",
+        },
+        {
+          title: "思いやりのある駐車",
+          desc: "他の方の邪魔にならないよう、車や自転車を駐車してください。",
+        },
+        {
+          title: "子どもたちは大切な存在",
+          desc: "常にお子様から目を離さないようにしてください。",
+        },
+        {
+          title: "静粛を保つ",
+          desc: "声を低くし、携帯電話の電源をお切りください。",
+        },
+        {
+          title: "マスジドを敬う",
+          desc: "クルアーン、書籍、その他の物品は丁寧に扱ってください。許可なく持ち出さないようにしてください。",
+        },
+        {
+          title: "乾燥した状態を保つ",
+          desc: "使用後はウドゥーエリアとトイレを清潔で乾いた状態に保ってください。",
+        },
       ],
     },
   },
