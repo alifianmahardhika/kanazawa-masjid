@@ -1,6 +1,14 @@
 {
   "items": [
     {
+      "slug": "isra-miraj-2026",
+      "title": "Isra Mi'raj Community Night",
+      "date": "2026-11-21",
+      "author": "Mosque Committee",
+      "excerpt": "A night of community, fun, and faith — kids' challenge, an animated Isra' wal-Mi'raj screening in Japanese, a warm welcome for new members, and a shared dinner.",
+      "image": "/images/events/202611IsraMiraj.jpeg"
+    },
+    {
       "slug": "islamic-geometric-arts-2026",
       "title": "Art Workshop on Islamic Geometric Arts",
       "date": "2026-06-27",
